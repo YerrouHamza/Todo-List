@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Linking Font Famely -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+    <!-- Linking Font Awesome For Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <!-- Linking CSS Style -->
+    <link rel="stylesheet" href="./TodoList-Style.css">
+    <title>Todo List</title>
+</head>
+<body>
+    <header class="header-styling">
+        <nav class="nav-head">
+            <h1 class="logo">Todo List</h1>
+            <ul class="nav-main">
+                <li><a href="#" class="nav-itme-1">Home</a></li>
+                <li><a href="#" class="nav-itme-2">Contact</a></li>
+                <li><a href="#" class="nav-itme-3">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="color-buttons">
+        <button class="dark-button" type="submit">
+            <i class="fas fa-adjust button-mode-after"></i>
+        </button>
+    </div>
+    <h2 class="head">Creat Todo List</h2>
+    <form>
+        <input type="text" class="todo-input">
+        <button class="todo-button" type="submit">
+            <i class="fas fa-plus-square"></i>
+        </button>
+        <div class="selected">
+            <select name="todos" class="felter-todo">
+                <option value="all">All</option>
+                <option value="completed">Completed</option>
+                <option value="uncompleted">Uncompleted</option>
+            </select>
+        </div>
+    </form>
+    <div class="todo-content">
+        <ul class="todo-list"></ul>
+    </div>
+
+    <!-- Linking JavaScript -->
+    <script src="./TodoList-Script.js"></script>
+</body>
+</html>
